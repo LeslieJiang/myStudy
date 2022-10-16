@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-16T07:39:36.959Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="32SxYDiN0Ql41lX00PKW" version="20.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-16T07:43:34.578Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="-VsdUFskfEmEpY5Vwd_9" version="20.4.0" type="github">
   <diagram name="Page-1" id="2c0d36ab-eaac-3732-788b-9136903baeff">
-    <mxGraphModel dx="1298" dy="1954.5" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1597" dy="2118.5" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -23,6 +23,14 @@
         </mxCell>
         <mxCell id="dmZce5G8_erc-VPVWdEy-310" value="receive&amp;nbsp;message" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=14;startArrow=classic;startFill=1;" edge="1" parent="1" source="dmZce5G8_erc-VPVWdEy-300" target="dmZce5G8_erc-VPVWdEy-307">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dmZce5G8_erc-VPVWdEy-322" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.537;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=14;startArrow=none;startFill=0;" edge="1" parent="1" source="dmZce5G8_erc-VPVWdEy-300" target="dmZce5G8_erc-VPVWdEy-252">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dmZce5G8_erc-VPVWdEy-323" value="master、slave、topic、queue&amp;nbsp; 关系" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontFamily=Architects Daughter;" vertex="1" connectable="0" parent="dmZce5G8_erc-VPVWdEy-322">
+          <mxGeometry x="-0.2099" y="-40" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="dmZce5G8_erc-VPVWdEy-300" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=1;hachureGap=4;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="1106" y="817" width="468" height="350" as="geometry" />
