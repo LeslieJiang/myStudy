@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-19T07:43:11.043Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="H7cNCCO1WtASKmLfpp1A" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-19T09:03:20.137Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="Dc8PVdRmwtQynI0YqCPo" version="20.4.1" type="github">
   <diagram name="Page-1" id="2c0d36ab-eaac-3732-788b-9136903baeff">
     <mxGraphModel dx="2974.5" dy="1912.5" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -1101,8 +1101,8 @@
             <mxPoint x="-90" y="4730" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k4fPX2OvdDwZdsduhn3M-78" value="&lt;h1&gt;广播 &amp;amp;&amp;nbsp;集群&amp;nbsp;消费&lt;/h1&gt;&lt;p&gt;一个主题上的消息被消费，可以广播或者集群，模式是针对&amp;nbsp;分组的；同一个主题的消息可以被&amp;nbsp;一个组广播消费，被另外一个组集群消费&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;sketch=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=18;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="1084" y="4620" width="300" height="225" as="geometry" />
+        <mxCell id="k4fPX2OvdDwZdsduhn3M-78" value="&lt;h1&gt;广播 &amp;amp;&amp;nbsp;集群&amp;nbsp;消费&lt;/h1&gt;&lt;p&gt;一个主题上的消息被消费，可以广播或者集群，&lt;font color=&quot;#ea6b66&quot;&gt;模式是针对&amp;nbsp;分组的&lt;/font&gt;；同一个主题的消息可以被&amp;nbsp;一个组广播消费，被另外一个组集群消费&lt;/p&gt;&lt;p&gt;对于广播消费:&lt;/p&gt;&lt;p&gt;1.&amp;nbsp;消息的广播在&amp;nbsp;broker&amp;nbsp;推送的时候，错过这个时间，后续启动的&amp;nbsp;Consumer&amp;nbsp;不会&amp;nbsp;收到&amp;nbsp;当前&amp;nbsp;group_id&amp;nbsp;的消息偏移值前的消息，即系&amp;nbsp;先发送&amp;nbsp;msg01，然后启动广播&amp;nbsp;group&amp;nbsp;中的&amp;nbsp;consumer_A,&amp;nbsp;此时&amp;nbsp;consumer_A&amp;nbsp;能收到&amp;nbsp;msg，然后启动&amp;nbsp;Consumer_B (与&amp;nbsp;Consumer_A&amp;nbsp;同&amp;nbsp;分组),&amp;nbsp;Consumer_B&amp;nbsp;不能收到&amp;nbsp;msg01，后续推送的&amp;nbsp;msg02...能正常收到&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;sketch=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=18;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1087" y="4526" width="506" height="370" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
