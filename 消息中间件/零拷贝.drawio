@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-29T10:26:42.089Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="TobtVn1Z72lssCvcoFOs" version="20.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-29T10:54:26.893Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="1gP-oh93sTuoyTJ9dHjn" version="20.5.1" type="github">
   <diagram id="e-zPQzMBw3i7FA1pLN4_" name="第 1 页">
-    <mxGraphModel dx="4791" dy="816" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4024" dy="394" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -563,6 +563,19 @@
         <mxCell id="IBNGdVYfVMEO5JlGynP2-31" value="taskD" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;sketch=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;fontColor=#1A1A1A;fillColor=default;" vertex="1" parent="1">
           <mxGeometry x="-1480" y="490.5" width="60" height="89" as="geometry" />
         </mxCell>
+        <mxCell id="IBNGdVYfVMEO5JlGynP2-61" style="edgeStyle=orthogonalEdgeStyle;curved=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=40;fontColor=#1A1A1A;startArrow=none;startFill=0;" edge="1" parent="1" source="IBNGdVYfVMEO5JlGynP2-32" target="IBNGdVYfVMEO5JlGynP2-27">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1340" y="535" />
+              <mxPoint x="-1340" y="405" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IBNGdVYfVMEO5JlGynP2-62" value="&lt;span style=&quot;font-size: 16px; background-color: rgb(255, 255, 255);&quot;&gt;调整&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=40;fontFamily=Architects Daughter;fontColor=#1A1A1A;labelBackgroundColor=none;" vertex="1" connectable="0" parent="IBNGdVYfVMEO5JlGynP2-61">
+          <mxGeometry x="0.0796" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="IBNGdVYfVMEO5JlGynP2-32" value="..." style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;sketch=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;fontColor=#1A1A1A;fillColor=default;" vertex="1" parent="1">
           <mxGeometry x="-1420" y="490" width="60" height="89" as="geometry" />
         </mxCell>
@@ -638,7 +651,7 @@
         <mxCell id="IBNGdVYfVMEO5JlGynP2-54" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;轮转执行&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;sketch=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=24;fontColor=#1A1A1A;" vertex="1" parent="1">
           <mxGeometry x="-1570" y="230.25" width="120" height="29.5" as="geometry" />
         </mxCell>
-        <mxCell id="IBNGdVYfVMEO5JlGynP2-60" value="&lt;h1&gt;&lt;span style=&quot;color: rgb(68, 68, 68);&quot;&gt;多级反馈队列（MLFQ）&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;&lt;p&gt;1.&amp;nbsp;任务一开始进入最高优先级的Queue，获得最高的执行优先级&lt;/p&gt;&lt;p&gt;2.&amp;nbsp;task&amp;nbsp;A&amp;nbsp;的优先级 &amp;gt; task B&amp;nbsp;的优先级，执行 task A (不执行&amp;nbsp;task&amp;nbsp;B)&lt;/p&gt;&lt;p&gt;3.&amp;nbsp;task&amp;nbsp;A&amp;nbsp;的优先级 =&amp;nbsp;task&amp;nbsp;B&amp;nbsp;优先级，轮转执行&lt;/p&gt;&lt;p&gt;4.&amp;nbsp;执行完&amp;nbsp;queue&amp;nbsp;的分片时间后，task&amp;nbsp;的&amp;nbsp;优先级&amp;nbsp;逐步下移&lt;/p&gt;&lt;p&gt;5.&amp;nbsp;间隔&amp;nbsp;S&amp;nbsp;后，低优先级（全部?）调整到最高优先级的queue&lt;/p&gt;&lt;p&gt;6.&amp;nbsp;时间分片内自动释放&amp;nbsp;cpu&amp;nbsp;的&amp;nbsp;task，被当是&amp;nbsp;交互性的&amp;nbsp;task，优先级不变&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;sketch=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;fontColor=#1A1A1A;" vertex="1" parent="1">
+        <mxCell id="IBNGdVYfVMEO5JlGynP2-60" value="&lt;h1&gt;&lt;span style=&quot;color: rgb(68, 68, 68);&quot;&gt;多级反馈队列（MLFQ）&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;&lt;p&gt;1.&amp;nbsp;任务一开始进入最高优先级的Queue，获得最高的执行优先级&lt;/p&gt;&lt;p&gt;2.&amp;nbsp;task&amp;nbsp;A&amp;nbsp;的优先级 &amp;gt; task B&amp;nbsp;的优先级，执行 task A (不执行&amp;nbsp;task&amp;nbsp;B)&lt;/p&gt;&lt;p&gt;3.&amp;nbsp;task&amp;nbsp;A&amp;nbsp;的优先级 =&amp;nbsp;task&amp;nbsp;B&amp;nbsp;优先级，轮转执行&lt;/p&gt;&lt;p&gt;4.&amp;nbsp;执行完&amp;nbsp;queue&amp;nbsp;的分片时间后，task&amp;nbsp;的&amp;nbsp;优先级&amp;nbsp;逐步下移&lt;/p&gt;&lt;p&gt;5.&amp;nbsp;间隔&amp;nbsp;S&amp;nbsp;后，全部 task 调整到最高优先级的 queue&lt;/p&gt;&lt;p&gt;6.&amp;nbsp;时间分片内自动释放&amp;nbsp;cpu&amp;nbsp;的&amp;nbsp;task，被当是&amp;nbsp;交互性的&amp;nbsp;task，优先级不变&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;sketch=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;fontColor=#1A1A1A;" vertex="1" parent="1">
           <mxGeometry x="-2660" y="325" width="670" height="365" as="geometry" />
         </mxCell>
       </root>
